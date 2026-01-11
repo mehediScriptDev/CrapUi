@@ -58,14 +58,14 @@ function App() {
 
         {/* GitHub Call-to-Action */}
         <div className="mt-8 flex flex-col items-center justify-center gap-3 text-gray-800 text-lg">
-          <p className="font-medium">
+          <p className="font-medium text-xs text-gray-500">
             If you like this project, consider starring it on GitHub.
           </p>
-          <p className="-mt-4 font-medium">Found an issue? Please report it.</p>
+          <p className="-mt-4 font-medium text-xs text-gray-500">Found an issue? Please report it.</p>
           <Link
             target="_blank"
             to={"https://github.com/mehediScriptDev/CrapUi"}
-            className="inline-flex items-center gap-2 bg-gray-600 justify-center text-white px-4 py-1 rounded-md transition-colors duration-200 "
+            className="inline-flex items-center gap-2 bg-gray-500 justify-center text-white px-4 py-1 rounded-md transition-colors duration-200 "
           >
             <FaGithub className="w-5 h-5" />
             <span>Star</span>

@@ -1,8 +1,20 @@
 {
   "name": "crap-ui",
   "private": false,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A lightweight Vite + React + Tailwind starter template",
+  "keywords": ["react", "vite", "tailwind", "template", "starter", "scaffold", "boilerplate"],
+  "author": "Mehedi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mehediScriptDev/CrapUi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mehediScriptDev/CrapUi/issues"
+  },
+  "homepage": "https://github.com/mehediScriptDev/CrapUi#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
