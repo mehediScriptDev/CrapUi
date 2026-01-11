@@ -1,0 +1,25 @@
+{
+  "name": "my-first-project",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^6.14.1",
+    "lucide-react": "^0.259.0",
+    "react-icons": "^4.10.1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "tailwindcss": "^4.1.17",
+    "postcss": "^8.4.21",
+    "autoprefixer": "^10.4.14",
+    "@vitejs/plugin-react": "^5.0.4"
+  }
+}

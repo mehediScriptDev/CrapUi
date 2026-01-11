@@ -44,7 +44,7 @@ const Header = ({
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <Link to={logo.link} className="block">
               <div className="text-white">
                 <h1 className="text-2xl md:text-3xl font-bold tracking-wider">
