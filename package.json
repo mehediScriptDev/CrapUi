@@ -1,10 +1,20 @@
 {
   "name": "crap-ui",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A lightweight Vite + React + Tailwind starter template",
-  "keywords": ["react tailwind project setup", "react tailwind", "vite", "react tailwind template", "tailwind", "template", "starter", "scaffold", "boilerplate"],
+  "keywords": [
+    "react tailwind project setup",
+    "react tailwind",
+    "vite",
+    "react tailwind template",
+    "tailwind",
+    "template",
+    "starter",
+    "scaffold",
+    "boilerplate"
+  ],
   "author": "Mehedi",
   "license": "MIT",
   "repository": {
