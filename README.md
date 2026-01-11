@@ -1,5 +1,7 @@
 # CrapUi
 
+[![npm version](https://img.shields.io/npm/v/crap-ui.svg?style=flat-square)](https://www.npmjs.com/package/crap-ui)
+
 A simple, ready-to-use Vite + React + React Router starter with Tailwind and Context API.
 
 <p align="center">
