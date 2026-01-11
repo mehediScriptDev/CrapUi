@@ -1,79 +1,60 @@
 # CrapUi
 
-A small, lightweight collection of React UI building blocks and a Vite starter template for quickly prototyping interfaces.
+A simple, ready-to-use Vite + React + React Router starter with Tailwind and Context API.
 
-## Quick Start
+<p align="center">
+  <img src="templates/basic/public/crapui.png" alt="CrapUi Logo" width="180" />
+</p>
 
-Create a new project with one command:
+**Quick Install**
+
+- One-line (no global install):
 
 ```bash
-npx crap-ui my-app
-cd my-app
+npx crap-ui my-project
+cd my-project
 npm run dev
 ```
 
-That's it! Your Vite + React + Tailwind project is ready.
+- Or install CLI globally and run:
 
-## Manual Installation
+```bash
+npm install -g crap-ui
+crap-ui my-project
+cd my-project
+npm run dev
+```
 
-- **Prerequisites**: Node.js `>=16` and `npm` (or `pnpm` / `yarn`).
-- **Clone the repository**:
+**What this project contains**
+
+- **Vite** — latest fast dev server and build tooling.
+- **React** (latest) + **React Router** (latest) for routing.
+- **Tailwind CSS** — utility-first styling preconfigured.
+- **Context API** — example auth/context setup included in `src/context`.
+- Example components in `src/Components` and a ready `templates/basic` starter.
+
+**How to use locally (if you cloned this repo)**
 
 ```bash
 git clone https://github.com/mehediScriptDev/CrapUi.git
-cd CrapUi
-```
-
-- **Install dependencies**:
-
-```bash
-npm install
-# or: pnpm install
-```
-
-**Project Setup**
-
-- **Run the development server**:
-
-```bash
-npm run dev
-# opens local dev server (Vite)
-```
-
-- **Build for production**:
-
-```bash
-npm run build
-```
-
-- **Preview the production build locally**:
-
-```bash
-npm run preview
-```
-
-- **Quick-start from the template**: the `templates/basic` folder contains a ready-to-use Vite + React setup. To create a new project from the template:
-
-```bash
-cp -R templates/basic my-new-project
-cd my-new-project
+cd CrapUi/templates/basic
 npm install
 npm run dev
 ```
 
-- **Key paths**:
-  - `src/` — application source files
-  - `src/Components/` — example UI components (buttons, layout helpers, etc.)
-  - `templates/basic/` — standalone starter template you can copy or adapt
+**Why use this**
 
-**Benefits**
+- Fast project scaffolding with sensible defaults.
+- Minimal, unopinionated setup so you can add your own libraries.
+- Includes Context API examples to get you started with global state.
 
-- **Fast development**: Vite-based setup gives near-instant hot reload and minimal setup time.
-- **Ready examples**: example components live in `src/Components` so you can reuse or extend them.
-- **Template-driven**: `templates/basic` is a drop-in starter for new projects — copy and go.
-- **Small and flexible**: minimal opinionated glue so you can add your preferred styling system easily.
+**Contributing & Support**
 
-If you want, I can add a short example showing how to import and use a component from `src/Components` in `src/App.jsx`.
-# CrapUi
-A small collection of React + Tailwind components I build daily...simple and reusable.
-<img src="crapui.jpg"/>
+- If you like the project, please star this repo.
+- Found a bug or have a feature idea? Open an issue on GitHub.
+- Contributions are welcome — feel free to open a pull request.
+
+**License**
+
+This project is released under the MIT License.
+
