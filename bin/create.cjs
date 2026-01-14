@@ -37,7 +37,7 @@ console.log('Copied template into', name);
 
 console.log('Running `npm install` in', name, '(this may take a few minutes)...');
 const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
-const proc = spawn(npm, ['install'], { cwd: target, stdio: 'inherit' });
+const proc = spawn(npm, ['install'], { cwd: target, stdio: 'inherit', shell: true });
 proc.on('close', (code) => {
   if (code === 0) {
     console.log('\nSuccess!');
