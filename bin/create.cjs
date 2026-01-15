@@ -43,13 +43,17 @@ async function main() {
   console.log("Template copied successfully.");
 
   // Rename _gitignore → .gitignore
-const gi = path.join(target, "_gitignore");
-if (fs.existsSync(gi)) {
-  fs.renameSync(gi, path.join(target, ".gitignore"));
-}
+  const gi = path.join(target, "_gitignore");
+  if (fs.existsSync(gi)) {
+    fs.renameSync(gi, path.join(target, ".gitignore"));
+  }
 
-  console.log("\nTailwind CSS is already configured and will be installed automatically.");
-  console.log("React Router and Lenis (smooth scroll) will also be installed by default.\n");
+  console.log(
+    "\nTailwind CSS is already configured and will be installed automatically."
+  );
+  console.log(
+    "React Router and Lenis (smooth scroll) will also be installed by default.\n"
+  );
 
   // Ask for optional packages
   const answers = await inquirer.prompt([
@@ -57,30 +61,35 @@ if (fs.existsSync(gi)) {
       type: "confirm",
       name: "reactIcons",
       message: "Do you want React Icons?",
-      default: true
+      default: true,
     },
     {
       type: "confirm",
       name: "lucideIcons",
       message: "Do you want Lucide?",
-      default: false
+      default: false,
     },
     {
       type: "confirm",
       name: "motion",
       message: "Do you want Motion (for animations)?",
-      default: true
+      default: true,
     },
-    
   ]);
 
-  console.log(`\nRunning npm install inside ${name} ...`);
   const npm = process.platform === "win32" ? "npm.cmd" : "npm";
-  const proc = spawn(npm, ["install"], {
-    cwd: target,
-    stdio: "inherit",
-    shell: true
-  });
+
+  // Base install (silent)
+  console.log(`\nInstalling dependencies in ${name} (this may take a moment)...`);
+  const proc = spawn(
+    npm,
+    ["install", "--silent", "--no-fund", "--no-audit"],
+    {
+      cwd: target,
+      stdio: "ignore", // no npm logs
+      shell: true,
+    }
+  );
 
   proc.on("close", (code) => {
     if (code !== 0) {
@@ -88,29 +97,27 @@ if (fs.existsSync(gi)) {
       process.exit(code);
     }
 
-    console.log("\nInstalling required and optional packages...\n");
-
-    const install = (pkg, label) => {
+    // Helper for silent optional installs
+    const install = (pkg) => {
       try {
-        console.log("Installing:", label);
-        execSync(`${npm} install ${pkg}`, {
+        execSync(`${npm} install ${pkg} --silent --no-fund --no-audit`, {
           cwd: target,
-          stdio: "inherit",
-          shell: true
+          stdio: "ignore", // no logs
+          shell: true,
         });
       } catch (err) {
-        console.error(`Failed to install ${label}:`, err.message);
+        console.error(`Failed to install ${pkg}:`, err.message);
       }
     };
 
     // Always install React Router
-    install("react-router", "React Router");
+    install("react-router");
 
     // Optional installs
-    if (answers.reactIcons) install("react-icons", "React Icons");
-    if (answers.lucideIcons) install("lucide-react", "Lucide");
-    if (answers.motion) install("motion", "Motion");
-    // Note: Lenis is already included in the template package.json
+    if (answers.reactIcons) install("react-icons");
+    if (answers.lucideIcons) install("lucide-react");
+    if (answers.motion) install("motion");
+    // Lenis is already in template's package.json
 
     console.log("\nProject setup complete.");
     console.log("To get started:");
