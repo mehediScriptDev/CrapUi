@@ -42,17 +42,17 @@ async function main() {
   copyRecursiveSync(templateDir, target);
   console.log("Template copied successfully.");
 
+  // Rename _gitignore → .gitignore
+const gi = path.join(target, "_gitignore");
+if (fs.existsSync(gi)) {
+  fs.renameSync(gi, path.join(target, ".gitignore"));
+}
+
   console.log("\nTailwind CSS is already configured and will be installed automatically.");
-  console.log("React Router will also be installed by default.\n");
+  console.log("React Router and Lenis (smooth scroll) will also be installed by default.\n");
 
   // Ask for optional packages
   const answers = await inquirer.prompt([
-    {
-      type: "confirm",
-      name: "lenis",
-      message: "Do you want Lenis for smooth scroll?",
-      default: true
-    },
     {
       type: "confirm",
       name: "reactIcons",
@@ -110,7 +110,7 @@ async function main() {
     if (answers.reactIcons) install("react-icons", "React Icons");
     if (answers.lucideIcons) install("lucide-react", "Lucide");
     if (answers.motion) install("motion", "Motion");
-    if (answers.lenis) install("lenis", "Lenis");
+    // Note: Lenis is already included in the template package.json
 
     console.log("\nProject setup complete.");
     console.log("To get started:");
