@@ -1,79 +1,135 @@
 
-<p align="center">
-	<img src="public/crapui.jpg" alt="CrapUI logo" width="240" />
-</p>
-
 # CrapUI
 
-A small React component library designed for fast prototyping and sensible defaults. This repository contains a minimal example app and the base setup used while developing CrapUI.
+CrapUI is a refined React starter built for developers who want speed, clarity, and a production-ready foundation without the usual setup fatigue. It combines modern tooling, clean defaults, and an intuitive structure so you can focus on building — not configuring.
 
-## Technologies & versions used
+If you value **simplicity**, **performance**, and **developer experience**, this starter gives you everything you need from day one.
+
+---
+
+## ✨ What You Get Out of the Box
+
+**Core Frameworks**
+
+- **React 19** — fast, stable, and future-proof
+- **React Router** — modern routing, preconfigured
+- **Vite** — ultra-fast dev server & optimized builds
+
+**Styling**
+
+- **Tailwind CSS** — fully set up and ready
+- Clean utility-first workflow
+
+**Enhancements**
+
+- **Lenis Smooth Scrolling** — premium-grade scroll experience
+- **Motion-ready animations** — built for fluid interactions
+- **Lucide + React Icons** — scalable icon systems
+
+**Architecture & Utilities**
+
+- Pre-built **Context API** structure
+- Organized folder system
+- ESLint for consistency
+
+A starter that feels minimal — but works like a full professional setup.
+
+---
+
+## ⚙️ Tech Stack Overview
 
 **Runtime**
+
 - React: 19.2.0
 - React DOM: 19.2.0
 
-**Build / Dev**
+**Build Tools**
+
 - Vite: 7.2.4
 - @vitejs/plugin-react: 5.1.1
 
 **Styling**
+
 - Tailwind CSS: 4.1.18
 - @tailwindcss/vite: 4.1.18
 
-**Icons / Utilities**
+**Icons & Utilities**
+
 - react-icons: 5.5.0
 - lucide: 0.562.0
 - react-router: 7.12.0
 
-**Lint / Dev tooling**
+**Linting**
+
 - ESLint: 9.39.1
 - @eslint/js: 9.39.1
 
-> These versions are taken from the project's `package.json` at the time of editing.
+---
 
-## Getting started
+## 🚀 Getting Started
 
-> Prerequisites: Node.js (recommended v18+), npm
-
-Install dependencies:
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Run the dev server:
+### Start development
 
 ```bash
 npm run dev
 ```
 
-Build for production:
+### Build for production
 
 ```bash
 npm run build
 ```
 
-Preview production build locally:
+### Preview production build
 
 ```bash
 npm run preview
 ```
 
-## Project structure (highlight)
+---
 
-- `src/` — React source files (components, pages, context)
-- `public/` — static assets (logo used above: `public/crapui.jpg`)
-- `index.html`, `vite.config.js` — Vite entry and config
+## 📁 Project Structure
 
-## Example usage
+```
+src/                → React components, pages, context
+public/             → static assets (logos, images)
+index.html          → main HTML entry
+vite.config.js      → Vite configuration
+```
 
-Open `src/App.jsx` to see a clean example of how the library's components are composed in a landing page.
-
-## Contributing
-
-Contributions are welcome. Open an issue to discuss changes or submit a pull request. Keep changes small and focused; include basic tests or a short demo page when adding new components.
+Inside `src/App.jsx` you’ll find a clean example layout — a perfect starting point for landing pages, dashboards, or feature modules.
 
 ---
 
-_Made with a pinch of sarcasm — CrapUI_
+## 💡 Why CrapUI?
+
+- **Zero setup overhead**
+- **Modern defaults that scale**
+- **Instant design-ready environment**
+- **Smooth scrolling that feels premium**
+- **Icons and animations built-in**
+- **Production-friendly architecture**
+
+It’s engineered for creators who want to ship fast — without sacrificing quality.
+
+---
+
+## 🤝 Contributing
+
+Contributions are appreciated. Please open an issue before starting major changes to stay aligned with the project direction.
+
+Small, focused PRs help maintain quality and momentum.
+
+---
+
+**Built with care, crafted for speed — CrapUI**
+A starter that respects your time.
+
+---
+
