@@ -42,8 +42,9 @@
   ],
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "inquirer": "^13.2.0",
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19",
     "tailwindcss": "^4.1.17"
   },
   "peerDependencies": {

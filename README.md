@@ -2,15 +2,16 @@
 
 [![npm version](https://img.shields.io/npm/v/crap-ui.svg?style=flat-square)](https://www.npmjs.com/package/crap-ui)
 
-A simple, ready-to-use Vite + React + React Router starter with Tailwind and Context API.
 
 <p align="center">
   <img src="templates/basic/public/crapui.png" alt="CrapUi Logo" width="180" />
 </p>
 
+Setup your project with just one command.(tailwind+reactjs+icons+motions+smooth scrolling with lenis+ context API)
+
 **Quick Install**
 
-- One-line (no global install):
+- One-line:
 
 ```bash
 npx crap-ui my-project
@@ -27,13 +28,20 @@ cd my-project
 npm run dev
 ```
 
-**What this project contains**
+**What’s Included**
 
-- **Vite** — latest fast dev server and build tooling.
-- **React** (latest) + **React Router** (latest) for routing.
-- **Tailwind CSS** — utility-first styling preconfigured.
-- **Context API** — example auth/context setup included in `src/context`.
-- Example components in `src/Components` and a ready `templates/basic` starter.
+- **Vite** — blazing-fast dev environment
+- **React**  (latest)
+- **React Router** — routing preconfigured
+- **Tailwind CSS** — utility-first styling out of the box
+- **Context API** — simple global state example in src/context
+
+Optional extras during setup:
+- React Icons
+- Lucide Icons
+- Motion animations
+- Smooth scrolling with Lenis
+
 
 **How to use locally (if you cloned this repo)**
 
@@ -45,10 +53,10 @@ npm run dev
 ```
 
 **Why use this**
+- Zero setup hassle, just one command
+- Clean project structure with super smooth scrolling effect
+- Built for real-world React apps
 
-- Fast project scaffolding with sensible defaults.
-- Minimal, unopinionated setup so you can add your own libraries.
-- Includes Context API examples to get you started with global state.
 
 **Contributing & Support**
 
