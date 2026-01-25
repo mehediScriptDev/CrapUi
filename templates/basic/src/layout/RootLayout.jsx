@@ -1,6 +1,7 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router';
 import NavbarLayout from './NavbarLayout';
 import FooterLayout from './FooterLayout';
+import SmoothScroll from '../components/utility/SmoothScroll';
 
 const RootLayout = () => {
   return (
@@ -9,7 +10,9 @@ const RootLayout = () => {
         <NavbarLayout />
       </header>
       <main>
-        <Outlet />
+       <SmoothScroll>
+         <Outlet />
+       </SmoothScroll>
       </main>
       <footer>
         <FooterLayout />
