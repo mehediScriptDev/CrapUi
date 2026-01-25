@@ -1,7 +1,7 @@
 {
   "name": "crap-ui",
   "private": false,
-  "version": "1.0.10",
+  "version": "1.0.11",
   "type": "module",
   "description": "A lightweight Vite + React + Tailwind + react/lucide icons and context api starter template",
   "keywords": [
